@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:elevation="5dp"
+    android:background="#2CC9D8"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/out_fit_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:elevation="2dp"
+      android:fontFamily="@font/cabin_semibold_font"
+      android:text="Messages"
+      android:textAlignment="center"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp" />
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/no_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="52dp"
+    android:visibility="gone"
+    android:layout_marginBottom="55dp"
+    android:elevation="3dp"
+    android:fontFamily="@font/cabin_regular_font"
+    android:text="No content to show"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textColor="#6c6969"
+    android:textSize="20sp" />
+
+  <ListView
+    android:id="@+id/messages_list_view"
+    android:layout_marginTop="52dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</RelativeLayout>

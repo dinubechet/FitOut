@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/bg_border3_rounded"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/lesbian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/cabin_semibold_font"
+                    android:text="Marie Calmonica"
+                    android:textColor="#191919"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/username_icon" />
+
+                    <TextView
+                        android:id="@+id/username_tv"
+                        android:layout_marginLeft="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_bold_font"
+                        android:text="Marie Calmonica"
+                        android:textColor="#959595"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                  android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:src="@drawable/location_icon" />
+
+                    <TextView
+                        android:id="@+id/location_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_bold_font"
+                        android:text="Venice, California"
+                        android:textColor="#959595"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/endblock"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="125dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_round_fill_red"
+                    android:text="Unblock"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cabin_bold"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

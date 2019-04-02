@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#2CC9D8"
+  tools:context=".Activities.MainActivity">
+
+  <LinearLayout
+    android:id="@+id/tutorial"
+    android:orientation="vertical"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  </LinearLayout>
+
+  <TextView
+    android:textColor="@android:color/white"
+    android:layout_marginTop="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="FitOut"
+    android:lineHeight="63sp"
+    android:textSize="70sp"
+    android:fontFamily="@font/majel_font"
+  />
+
+
+</RelativeLayout>

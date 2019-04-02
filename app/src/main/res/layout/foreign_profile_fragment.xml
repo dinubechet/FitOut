@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#2CC9D8">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2CC9D8">
+
+    <ImageView
+      android:id="@+id/back_arrow_foreign"
+      android:layout_margin="5dp"
+      android:layout_width="30dp"
+      android:layout_height="35dp"
+      android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+      android:elevation="1dp" />
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+          android:id="@+id/profile_image_button"
+          android:layout_width="233dp"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="28dp"
+          android:elevation="1dp">
+
+
+          <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_profile" />
+
+          <Button
+            android:layout_marginBottom="4dp"
+            android:id="@+id/follow_button"
+            android:layout_width="99dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_round_fill"
+            android:fontFamily="@font/cabin_semibold"
+            android:text="Follow+"
+            android:textAllCaps="false"
+            android:textColor="#2CC9D8"
+            android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="181dp"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin_bold_font"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            tools:text="Someone Someone" />
+
+          <TextView
+            android:id="@+id/at_sign_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin_bold_font"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:text="someonesomeone" />
+
+          <TextView
+            android:id="@+id/user_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cabin_semibold"
+            android:gravity="center"
+            android:textColor="#D9FFFFFF"
+            android:textSize="14sp"
+            tools:text="Venice,CA|Morning Person|24hour Fitness" />
+
+          <TextView
+            android:id="@+id/followers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cabin_semibold_font"
+            android:textAlignment="center"
+            android:textColor="#D9FFFFFF"
+            android:textSize="18sp"
+            tools:text="Followers:  | Following: " />
+
+          <TextView
+            android:id="@+id/motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cabin_semibold_font"
+            android:textAlignment="center"
+            android:textColor="#D9FFFFFF"
+            android:textSize="16sp"
+            tools:text=" information information information information information " />
+
+          <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+              android:id="@+id/partner_up_button"
+              android:textAllCaps="false"
+              android:fontFamily="@font/cabin_semibold"
+              android:layout_width="115dp"
+              android:layout_height="39dp"
+              android:background="@drawable/bg_round_fill"
+              android:text="Partner Up!"
+              android:textColor="#2CC9D8"
+              android:textSize="16sp"
+              android:layout_marginBottom="4dp"
+              android:layout_marginTop="4dp"
+              />
+
+            <Button
+              android:layout_marginBottom="4dp"
+              android:layout_marginTop="4dp"
+              android:id="@+id/message_button"
+              android:layout_marginStart="12dp"
+              android:textAllCaps="false"
+              android:fontFamily="@font/cabin_semibold"
+              android:layout_width="115dp"
+              android:layout_height="39dp"
+              android:background="@drawable/bg_round_fill"
+              android:text="Message"
+              android:textColor="#2CC9D8"
+              android:textSize="16sp"
+              />
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#40FFFFFF" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="53dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+              android:id="@+id/posts"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="40dp"
+              android:layout_weight="1">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/cabin_regular"
+                android:text="Posts"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+              <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+              android:id="@+id/likes"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="40dp"
+              android:layout_weight="1">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/cabin_regular"
+                android:text="Likes"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+              <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+              android:id="@+id/events"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="40dp"
+              android:layout_weight="1">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/cabin_regular"
+                android:text="Events"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+              <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+              android:id="@+id/partners"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="40dp"
+              android:layout_weight="1">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/cabin_regular"
+                android:text="Partners"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+              <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            </RelativeLayout>
+          </LinearLayout>
+        </LinearLayout>
+      </RelativeLayout>
+    </ScrollView>
+  </RelativeLayout>
+
+
+
+
+</RelativeLayout>

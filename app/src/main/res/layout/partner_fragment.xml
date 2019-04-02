@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#2CC9D8"
+    android:layout_height="match_parent">
+
+    <ListView
+      android:id="@+id/partners_list_view"
+      android:layout_marginTop="47dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#FEFEFE"/>
+
+    <TextView
+      android:layout_centerInParent="true"
+      android:id="@+id/no_content"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:fontFamily="@font/cabin_regular_font"
+      android:text="No content to show"
+      android:textAlignment="center"
+      android:gravity="center"
+      android:textColor="#737373"
+      android:textSize="20sp" />
+
+    <RelativeLayout
+        android:background="#2CC9D8"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <Button
+            android:id="@+id/back_arrow"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:text="Partners"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/cabin_semibold_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <include layout="@layout/loading_indicator"/>
+
+</RelativeLayout>

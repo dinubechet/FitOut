@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#2CC9D8">
+
+  <LinearLayout
+    android:layout_marginTop="180dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/text_view1_tutorial_screen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:fontFamily="@font/cabin_semibold_font"
+    android:text="All the information you need around fitness"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="32sp"
+    android:visibility="visible" />
+
+
+  <TextView
+    android:id="@+id/text_view2_tutorial_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="130dp"
+    android:layout_marginRight="20dp"
+    android:height="76dp"
+    android:fontFamily="@font/cabin_regular_font"
+    android:text="You will find a variety of workout categories on our app. For each we have created a feed and a network for people to exchange information."
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:visibility="visible" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/tutorial_button"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:fontFamily="@font/cabin_bold_font"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="56dp"
+    android:background="@drawable/bg_round_fill"
+    android:textAllCaps="false"
+    android:text="Next"
+    android:textColor="#000000" />
+
+
+</RelativeLayout>

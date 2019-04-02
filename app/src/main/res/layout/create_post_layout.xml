@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#2CC9D8">
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:background="#2CC9D8"
+    android:elevation="3dp">
+    <ImageView
+      android:id="@+id/back_button"
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:padding="10dp"
+      android:src="@drawable/ic_clear_black_24dp" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:fontFamily="@font/cabin_semibold_font"
+      android:text="Create Post"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp" />
+    <RelativeLayout
+      android:id="@+id/post_button"
+      android:layout_width="60dp"
+      android:layout_height="47dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/cabin_bold_font"
+        android:text="POST"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <LinearLayout
+    android:layout_marginTop="47dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp">
+    <EditText
+      android:padding="16dp"
+      android:background="@android:color/transparent"
+      android:id="@+id/message_edit_text"
+      android:hint=" What’s your post about…"
+      android:textColorHint="#B2FFFFFF"
+      android:fontFamily="@font/cabin_regular_font"
+      android:textSize="18sp"
+      android:inputType="textCapSentences|textMultiLine"
+      android:gravity="start|top"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textCursorDrawable="@drawable/cursor_color"/>
+    <GridView
+      android:numColumns="auto_fit"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/girdView"/>
+  </LinearLayout>
+  <RelativeLayout
+      android:visibility="gone"
+    android:id="@+id/add_video"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="150dp"
+    android:layout_height="wrap_content">
+    <ImageView
+      android:background="@drawable/add_media_button"
+      android:layout_width="126dp"
+      android:layout_height="44dp" />
+    <TextView
+      android:text="+add video"
+      android:fontFamily="@font/cabin_bold_font"
+      android:textSize="14sp"
+      android:textColor="#2CC9D8"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  </RelativeLayout>
+  <RelativeLayout
+    android:id="@+id/add_media"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+    <ImageView
+      android:background="@drawable/add_media_button"
+      android:layout_width="126dp"
+      android:layout_height="44dp" />
+    <TextView
+      android:text="+add photos"
+      android:fontFamily="@font/cabin_bold_font"
+      android:textSize="14sp"
+      android:textColor="#2CC9D8"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  </RelativeLayout>
+  <include layout="@layout/loading_indicator"/>
+</RelativeLayout>

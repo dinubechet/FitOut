@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#2CC9D8">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <Button
+    android:id="@+id/x"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="17dp"
+    android:background="@drawable/ic_clear_black_24dp"
+    android:padding="12dp" />
+
+  <TextView
+    android:id="@+id/welcome_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="72dp"
+    android:fontFamily="@font/cabin_bold_font"
+    android:text="Welcome back!"
+    android:textAllCaps="false"
+    android:textColor="#FFFFFF"
+    android:textSize="32sp" />
+
+  <TextView
+    android:id="@+id/enter_your_account"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="120dp"
+    android:fontFamily="@font/cabin_regular_font"
+    android:text="Enter your account credentials to log in."
+    android:textAllCaps="false"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="165dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/login_backgroud"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/email_edit_text"
+      android:layout_width="match_parent"
+      android:inputType="textEmailAddress"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="24dp"
+      android:layout_marginTop="38dp"
+      android:layout_marginRight="24dp"
+      android:hint="E-mail"
+      android:singleLine="true"
+      android:textColorHint="#FFFFFF"
+      android:textSize="18sp" />
+
+    <EditText
+      android:id="@+id/password_edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textPassword"
+      android:layout_marginLeft="24dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginRight="24dp"
+      android:hint="Password"
+      android:singleLine="true"
+      android:textColorHint="#FFFFFF"
+      android:textSize="18sp" />
+
+    <EditText
+      android:id="@+id/repeat_password_edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textPassword"
+      android:layout_marginLeft="24dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginRight="24dp"
+      android:hint="Repeat password"
+      android:singleLine="true"
+      android:textColorHint="#FFFFFF"
+      android:textSize="18sp" />
+
+    <TextView
+      android:id="@+id/forgot_password"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:layout_marginTop="12dp"
+      android:textColor="#FFFFFF"
+      android:layout_marginRight="24dp"
+      android:layout_marginBottom="25dp"
+      android:text="Forgot password??" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/next_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginLeft="32dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/bg_round_fill"
+    android:fontFamily="@font/cabin_bold_font"
+    android:text="Next"
+    android:textAllCaps="false"
+    android:textColor="#000000"
+    android:textSize="16sp" />
+
+  </LinearLayout>
+
+  </RelativeLayout>
+
+  </ScrollView>
+
+<include layout="@layout/loading_indicator" />
+
+
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="By Signing up you are in agreement with FitOut terms and services. Fore more information look here."
+      android:id="@+id/signupcheckbox"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

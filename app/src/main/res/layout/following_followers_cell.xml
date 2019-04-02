@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_border3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/lesbian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_semibold_font"
+                        android:text="Marie Calmonica"
+                        android:textColor="#191919"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/username_icon" />
+
+                        <TextView
+                            android:id="@+id/username_tv"
+                            android:layout_marginLeft="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/cabin_bold_font"
+                            android:text="Marie Calmonica"
+                            android:textColor="#959595"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/location_icon" />
+
+                        <TextView
+                            android:id="@+id/location_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/cabin_bold_font"
+                            android:text="Venice, California"
+                            android:textColor="#959595"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/partnership_button"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="125dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/bg_round_end_partnership"
+                        android:text="End Partnership"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/cabin_bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_border3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cabin_bold_font"
+                android:text="About"
+                android:textColor="#959595"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/description_about"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/cabin_regular_font"
+                android:text="Hi everyone!!  Super passionate about yoga, been practicing for over 10 years. Feel free to reach out and connect if you have any questions."
+                android:textColor="#2F2F2F"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_border3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/follow_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_border3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/follow"
+                    android:layout_width="11dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/follow_icon" />
+
+                <TextView
+                    android:id="@+id/follow_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/cabin_regular_font"
+                    android:text="Follow"
+                    android:textColor="#2CC9D8"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_border3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/message_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-1dp"
+                    android:fontFamily="@font/cabin_regular_font"
+                    android:text="Message"
+                    android:textColor="#2CC9D8"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

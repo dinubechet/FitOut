@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_image"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/different_faggot" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/time_passed"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/cabin_semibold_font"
+          android:textColor="#FFFFFF"
+          android:textSize="12sp"
+          tools:text="2 minutes ago" />
+
+        <TextView
+          android:id="@+id/notification"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="17dp"
+          android:fontFamily="@font/cabin_semibold_font"
+          android:textColor="#FFFFFF"
+          android:textSize="18sp"
+          tools:text="The event you signed up to is coming up later today." />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="#66F8F8F8" />
+  </LinearLayout>
+</RelativeLayout>

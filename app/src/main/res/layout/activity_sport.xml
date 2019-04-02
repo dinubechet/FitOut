@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    tools:context=".Activities.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/first_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEFEFE"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#2CC9D8"
+                android:elevation="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/back_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/cabin_semibold_font"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#2CC9D8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/feed_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/cabin_bold_font"
+                            android:text="NEWS"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/people_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/cabin_bold_font"
+                            android:text="PEOPLE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/events_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/cabin_bold_font"
+                            android:text="EVENTS"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2CC9D8"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/feed_indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="#16818C"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/people_indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="#16818C"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/events_indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="#16818C"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_border3"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="18dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/search_icon2" />
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cabin_regular_font"
+                android:hint="Search for users"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#B1B1B1"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginBottom="50dp"
+            android:id="@+id/sport_feed_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:visibility="gone"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/2934735716" />
+
+    <ImageView
+        android:id="@+id/add_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_plus_sign" />
+
+    <ImageView
+        android:id="@+id/add_event_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_plus_sign"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/sport_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/cabin_regular_font"
+        android:gravity="center"
+        android:text="No content to show"
+        android:textAlignment="center"
+        android:textColor="#737373"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/changeFeedOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_location" />
+
+    <include layout="@layout/loading_indicator" />
+
+</RelativeLayout>

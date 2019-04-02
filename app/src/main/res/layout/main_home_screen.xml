@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2CC9D8"
+    android:elevation="5dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="50dp"
+      android:layout_height="52dp" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/picture_button"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/profile_image"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:src="@drawable/default_profile" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/bell"
+    android:layout_width="55dp"
+    android:layout_height="35dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:elevation="5dp">
+
+    <ImageView
+      android:id="@+id/bellImg"
+      android:layout_width="15dp"
+      android:layout_height="20dp"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="10dp"
+      android:background="@drawable/bell" />
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/out_fit_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:elevation="7dp"
+    android:fontFamily="@font/majel_font"
+    android:text="@string/fitout"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:textSize="35sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/hello_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:height="37dp"
+      android:fontFamily="@font/cabin_bold_font"
+      tools:text="Hello, John Michael"
+      android:textColor="#292929"
+      android:textSize="24sp" />
+
+    <TextView
+      android:id="@+id/hello_text2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:height="24dp"
+      android:fontFamily="@font/cabin_regular_font"
+      android:text="@string/select_from_your_workout_categories_below"
+      android:textColor="#787878"
+      android:textSize="16sp" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="130dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="15dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/running" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Running"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/yoga2" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Yoga"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/pullups" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Body Building"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:id="@+id/button_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/yoga" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Weight Loss"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/button_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/hiking" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Hiking"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/button_6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_border2"
+        android:padding="3dp">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bg_border">
+
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/bench" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/cabin_semibold_font"
+              android:text="Power Lifting"
+              android:textColor="#C0C0C0" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>
